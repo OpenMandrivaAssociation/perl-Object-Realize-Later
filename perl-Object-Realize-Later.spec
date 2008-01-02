@@ -10,6 +10,7 @@ Source:		http://search.cpan.org/CPAN/authors/id/M/MA/MARKOV/%{real_name}-%{versi
 URL:		http://search.cpan.org/dist/Object-Realize-Later/
 BuildArch:	noarch
 BuildRequires:	perl-devel
+BuildRoot:	%{_tmppath}/%{name}-buildroot
 
 %description
 This module helps you implementing delay loading of object-data.  While
