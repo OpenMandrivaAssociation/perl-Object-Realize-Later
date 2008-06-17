@@ -3,7 +3,7 @@
 Summary:	CPAN %{real_name} perl module
 Name:		perl-%{real_name}
 Version:	0.18
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	GPL or Artistic
 Group:		Development/Perl
 Source:		http://search.cpan.org/CPAN/authors/id/M/MA/MARKOV/%{real_name}-%{version}.tar.bz2
