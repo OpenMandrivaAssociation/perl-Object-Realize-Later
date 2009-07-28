@@ -1,16 +1,18 @@
-%define	real_name Object-Realize-Later
+%define	upstream_name    Object-Realize-Later
+%define	upstream_version 0.18
 
-Summary:	CPAN %{real_name} perl module
-Name:		perl-%{real_name}
-Version:	0.18
-Release:	%mkrel 2
-License:	GPL or Artistic
+Name:		perl-%{upstream_name}
+Version:	%perl_convert_version %{upstream_version}
+Release:	%mkrel 1
+
+Summary:	CPAN %{upstream_name} perl module
+License:	GPL+ or Artistic
 Group:		Development/Perl
-Source:		http://search.cpan.org/CPAN/authors/id/M/MA/MARKOV/%{real_name}-%{version}.tar.bz2
 URL:		http://search.cpan.org/dist/Object-Realize-Later/
+Source0:	http://search.cpan.org/CPAN/authors/id/M/MA/MARKOV/%{upstream_name}-%{upstream_version}.tar.bz2
+
 BuildArch:	noarch
-BuildRequires:	perl-devel
-BuildRoot:	%{_tmppath}/%{name}-buildroot
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 This module helps you implementing delay loading of object-data.  While
@@ -18,7 +20,7 @@ creating a stub-object, Object::Realize::Later simulates you got the
 real data.
 
 %prep
-%setup -q -n %{real_name}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -37,5 +39,3 @@ rm -rf $RPM_BUILD_ROOT
 %doc Changes README
 %{_mandir}/*/*
 %{perl_vendorlib}/Object/Realize
-
-
