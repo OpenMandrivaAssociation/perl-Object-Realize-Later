@@ -1,14 +1,14 @@
 %define	modname	Object-Realize-Later
-%define	modver	0.18
+%define modver 0.19
 
 Summary:	CPAN %{modname} perl module
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	10
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/Object-Realize-Later/
-Source0:	http://search.cpan.org/CPAN/authors/id/M/MA/MARKOV/%{modname}-%{modver}.tar.bz2
+Source0:	http://search.cpan.org/CPAN/authors/id/M/MA/MARKOV/Object-Realize-Later-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl-devel
 
@@ -34,4 +34,5 @@ real data.
 %doc Changes README
 %{perl_vendorlib}/Object/Realize
 %{_mandir}/man3/*
+
 
