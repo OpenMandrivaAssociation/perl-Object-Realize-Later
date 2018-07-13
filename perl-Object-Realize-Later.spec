@@ -10,6 +10,7 @@ Group:		Development/Perl
 Url:		http://search.cpan.org/dist/Object-Realize-Later/
 Source0:	http://search.cpan.org/CPAN/authors/id/M/MA/MARKOV/Object-Realize-Later-%{modver}.tar.gz
 BuildArch:	noarch
+BuildRequires:	perl(Test)
 BuildRequires:	perl-devel
 
 %description
